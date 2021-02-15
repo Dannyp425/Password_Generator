@@ -55,9 +55,9 @@ var spChar = window.confirm("Do you want to include special characters?");
   }
 
 //Confirm that at least one of the criteria was selected, shuffle array, and return generated password
-if (!lowerCase && !upperCase && !numb && !spec) {
+if (!lowerCase && !upperCase && !numbs && !spChar) {
   window.alert("You need to select at least one type! Please try again");
-  return 
+  return " ";
 } else {
   let shuffled = options.sort(() => Math.random() - 0.5);
       shuffled = shuffled.join("");
